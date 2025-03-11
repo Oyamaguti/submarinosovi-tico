@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ache o Submarino Soviético</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Ache o Submarino Soviético</h1> 
+    </header>
+
+    <label for="regras" id="mostrabotaoregras">
+        <h1 class="botao"> Informacoes necessarias </h1>
+    </label>
+    <input type="checkbox" id="regras" style="display:none;">
+
+    <div class="caixaregras">
+        <div class="conteudo">
+            <span class="fecha" onclick="document.getElementById('regras').checked = false;">&times;</span>
+            <h2>Missao: Caça ao Submarino Sovietico</h2>
+            <p>Voce e um comandante da Marinha Aliada encarregado de localizar um submarino sovietico perdido nas profundezas do oceano. Sua missao e encontra-lo antes que seja tarde demais!</p>
+            <ul>
+                <li><strong>Use seu radar tatico:</strong> Ao mover o mouse pela tela, um sonar aparecera no ponteiro.</li>
+                <li><strong>Atencao ao tamanho do sonar:</strong> Quanto menor ele ficar, mais perto voce estara do submarino!</li>
+                <li><strong>Descubra sua localizacao antes que desapareca:</strong> Quando estiver suficientemente proximo, recebera uma mensagem indicando o sucesso da missao!</li>
+                <li><strong>Por favor, interaja (clique) na tela do jogo, pois o navegador bloqueia o audio de forma automatica</strong></li>
+            </ul>
+            <p><em>Prepare-se, comandante! O tempo e essencial para evitar que o submarino se perca para sempre nas aguas gelidas.</em></p>
+        </div>
+    </div>
+
+    <div id="jogo"></div>
+
+    <footer>Projeto desenvolvido por Vinicius Oyamaguti</footer>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
